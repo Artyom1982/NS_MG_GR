@@ -15,10 +15,10 @@ from NumSrcF import numer_src_function, numer_src_function0
 from Graph_mod import graphic_module, graphic_in
 from enthalpy import energy_enthalpy
 
-from MG_parallel import SOLUTION_OF_TOV
+from MG_parallel import SOLUTION_OF_TOV #for GR calculations one need to simply MG_parallel change on GR_parallel
 
 #the launch of this file activates function of solution on multiple cores for various densities in the center. For this example - 5 cores.
-EOS = 'EOS_GM1'
+EOS = 'EOS_GM1' #specify corresponds EoS and then to put in init_files corresponding files with densities, frequencies specified below. 
 
 energy0 = 250
 energy1 = 275
@@ -32,6 +32,7 @@ frequency2 = 200
 frequency3 = 200
 frequency4 = 200
 
+#specify the shifts from initial solutions. Zeros for checking of solutions
 delta_f0 = 0
 delta_f1 = 0
 delta_f2 = 0
